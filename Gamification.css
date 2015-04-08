@@ -1,0 +1,182 @@
+/** comment in CSS
+
+p {
+	//text will be red and centered for all <p> tags
+	color: red;
+	text-align: center;
+
+}
+
+#para1 {
+	//text will be red and centered for *the* element with id="para1"
+	color: red;
+	text-align: center;
+}
+
+.class1 {
+	//text will be red and centered for all elements with class='class1'
+	color: red;
+	text-align: center;
+}
+
+p.center {
+	//text will be red and centered for all elements with all paragraph elements and class="center"
+	color: red;
+	text-align: center;
+}
+
+div p {
+	//text will be red and centered for all paragraph elements within a div tag.
+	color: red;
+	text-align: center;
+}
+
+.foo#fum {
+	//text will be red and centered for all elements with class='foo' and id='fum' (fickas wrote 'class foo and id fum')
+	color: red;
+	text-align: center;
+}
+
+:nth-child(even) {}        //The will select every other element; can use odd as well.
+
+**/
+
+body {
+	width: 600px;
+}
+
+/* sets entire background for page.  all elements will be within this div */
+.main_box {
+	background-color: rgb(230, 230, 230);
+	width: 580px;
+	height: 630px;
+	/* padding: 5px; */
+}
+
+/* adds more than 1px of space, not sure why */
+.top_spacer {
+	height: 1px;
+	padding: 0px;
+	border: 0px;
+	margin: 0px;
+}
+
+/* orange header box */
+.header_box {
+	color: rgb(230, 230, 230);
+	text-align: left;
+	font-size: 15pt;
+	background-color: rgb(230, 92, 0);
+	padding: 10px;
+	margin: 10px;
+	margin-right: 10px;
+	margin-top: 20px; /* does not add space above box... ? */
+	line-height: 95%;
+	font: times;
+}
+
+/* solid line */
+hr {
+	color: rgb(90, 90, 90);
+	width: 95%;
+	margin-top: 20px;
+}
+
+/* item row with clear back ground.  Div will contain two columns of text and an image on the RIGHT */
+#item_block_clear{
+	width: 520px;
+	padding: 10px;
+	margin-left: 10px;
+}
+
+/* item row with gray back ground.  Div will contain two columns of text and an image on the LEFT */
+.item_block_gray{
+	width: 540px;
+	height: 61px;
+	background-color: rgb(201, 201, 201);
+	padding: 10px;
+	margin-left: 10px;
+}
+
+.two_col_text_block {
+	color: rgb(90, 90, 90);
+	margin: 20px;
+	width: 500px;
+	display: inline-block;
+}
+
+.two_col_text_block_right {
+	color: rgb(90, 90, 90);
+	margin: 20px;
+	margin-right: 40px;
+	width: 550px;
+	display: inline-block;
+}
+
+.item_description_right {
+	font-size: 11pt;
+	line-height: 95%;
+	width: 200px;
+	float: right;
+
+	/* TEST COLORING */
+	/* background-color: white; */
+	vertical-align: text-top;
+}
+
+.item_example_right {
+	font-size: 11pt;
+	line-height: 95%;
+	width: 200px;
+	margin-left: 10px;
+	float: right;
+	height: 20%;
+	/* TEST COLORING */
+	/* background-color: white; */
+	vertical-align: text-top;
+}
+
+.item_description {
+	font-size: 11pt;
+	line-height: 95%;
+	width: 200px;
+	display: inline-block; /* not working!  floating is worse!! */
+
+	/* TEST COLORING */
+	/* background-color: white; */
+	vertical-align: text-top;
+}
+
+.item_example {
+	font-size: 11pt;
+	line-height: 95%;
+	width: 200px;
+	margin-left: 10px;
+	display: inline-block; /* not working! floating is worse!! */
+	height: 20%;
+	/* TEST COLORING */
+	/* background-color: white; */
+	vertical-align: text-top;
+}
+
+/* doesn't work! */
+#icon_right {
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+}
+
+#img.icon {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    /* float: right; */
+    height: 60px;
+    width: 60px;
+}
+
+.icon_spacer {
+	display: inline-block;
+	width: 70px;
+	height: 60px;
+}
